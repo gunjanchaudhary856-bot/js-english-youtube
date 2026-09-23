@@ -1,0 +1,251 @@
+"use strict" //treat all JS code as newer version ??default nowdays
+// alert("hello")   alert is not defined .. we are using node.js not browser
+// console.log(3+2) console.log("gunjan") error and unreadable
+// console.log(3+2); console.log("gunjan") //improve readability of the code
+console.log(3+2);
+console.log("gunjan")
+
+// ECMAScript2023 Langage Specification (check this for more data type ..standard data type)
+
+let name = "gunjan" //string
+let age = 14 // number
+let isloggedin = true //boolean
+
+//number -> 2 to powe 53
+//bigint ->
+//string -> ""
+//boolean -> true, false
+//null -> standalone value
+//undefined -> 
+//symbol ->unique
+
+//object 
+
+console.log(typeof age); //number
+console.log(typeof name); //string 
+console.log(typeof isloggedin); //boolean
+console.log(typeof null); //object
+console.log(typeof undefined); //undefined
+
+
+/*
+
+# JavaScript — Data Types & Basic Rules
+
+ 1. `"use strict"`
+
+javascript
+"use strict";
+
+
+* JavaScript ko **strict mode** me run karta hai.
+* Code me kuch unsafe/incorrect practices ko detect karne me help karta hai.
+* Modern JavaScript me strict mode important hai.
+
+---
+2. `alert()`
+
+```javascript
+alert("Hello");
+```
+
+* `alert()` browser me popup message dikhata hai.
+* **Node.js** me directly `alert()` available nahi hota.
+
+---
+
+3. Semicolon `;`
+
+```javascript
+console.log(3 + 2);
+console.log("Gunjan");
+```
+
+* `;` statement ko end karne ke liye use hota hai.
+* JavaScript kai cases me semicolon automatically samajh leta hai, lekin **readability ke liye semicolon use karna good practice** hai.
+
+---
+
+# JavaScript Data Types
+
+JavaScript me commonly ye data types milte hain:
+
+### 1. Number
+
+```javascript
+let age = 14;
+```
+
+* Integers aur decimal numbers dono ke liye.
+* JavaScript ka normal `Number` type approximately `2⁵³` tak integers ko safely represent karta hai.
+
+```javascript
+typeof age; // "number"
+```
+
+---
+
+### 2. BigInt
+
+Bahut bade integers ke liye use hota hai.
+
+```javascript
+let bigNumber = 12345678901234567890n;
+```
+
+* Number ke comparison me much larger integers represent kar sakta hai.
+* End me `n` lagta hai.
+
+---
+
+### 3. String
+
+Text ko represent karta hai.
+
+```javascript
+let name = "Gunjan";
+```
+
+String ko quotes me likhte hain:
+
+```javascript
+"Gunjan"
+'Gunjan'
+```
+
+```javascript
+typeof name; // "string"
+```
+
+---
+
+### 4. Boolean
+
+Sirf **2 values** hoti hain:
+
+```javascript
+true
+false
+```
+
+Example:
+
+```javascript
+let isLoggedIn = true;
+```
+
+Used for **yes/no, true/false conditions**.
+
+---
+
+### 5. `null`
+
+```javascript
+let value = null;
+```
+
+* Intentionally **empty/no value** represent karta hai.
+* `null` ek actual value hai.
+
+Interesting point:
+
+```javascript
+typeof null; // "object"
+```
+
+Ye JavaScript ka **historical behavior/quirk** hai.
+
+---
+
+### 6. `undefined`
+
+Variable declare hua, lekin value assign nahi hui:
+
+```javascript
+let state;
+```
+
+```javascript
+console.log(state); // undefined
+```
+
+```javascript
+typeof undefined; // "undefined"
+```
+
+---
+
+### 7. Symbol
+
+Unique identifiers banane ke liye use hota hai.
+
+```javascript
+let id = Symbol("id");
+```
+
+Do same description wale Symbols bhi different hote hain.
+
+```javascript
+Symbol("id") !== Symbol("id");
+```
+
+---
+
+### 8. Object
+
+Multiple related data ko store karne ke liye use hota hai.
+
+```javascript
+let student = {
+    name: "Gunjan",
+    age: 14
+};
+```
+
+Objects JavaScript me bahut commonly used hote hain.
+
+---
+
+# `typeof`
+
+`typeof` ka use kisi value ka **data type check** karne ke liye hota hai.
+
+```javascript
+typeof age;
+typeof name;
+typeof isLoggedIn;
+```
+
+Examples:
+
+```javascript
+typeof 14          // "number"
+typeof "Gunjan"    // "string"
+typeof true        // "boolean"
+typeof undefined   // "undefined"
+typeof null        // "object" ⚠️
+```
+
+## Quick Revision
+
+```text
+Number     → numbers
+BigInt     → very large integers
+String     → text
+Boolean    → true / false
+null       → intentionally empty value
+undefined  → value not assigned
+Symbol     → unique value
+Object     → collection of related data
+```
+
+### ⭐ Important
+
+```text
+typeof null       → "object"      ⚠️
+typeof undefined  → "undefined"
+```
+
+`null` ka `typeof "object"` aana JavaScript ka old historical behavior hai.
+
+*/
