@@ -1,62 +1,62 @@
 
-//datatype and its conversion.......................
+// //datatype and its conversion.......................
 
-let score = 33;
-console.log(typeof score)  //number
-console.log(typeof(score))  //number
-let valueInnumber  = Number(score) 
-console.log(valueInnumber);  //33
-console.log(typeof  valueInnumber); //number99
-
-
-let scor = "33abc";
-console.log(typeof scor)  //string
-console.log(typeof(scor))  //string
-let valueInnumbe  = Number(scor)  
-console.log(valueInnumbe);  //  output NaN --------> not a number 
-console.log(typeof  valueInnumbe); //number
-
-let a = true;
-console.log(typeof a); //boolean
-let val = Number(a);
-console.log(val); // 1 
-console.log(typeof val); //number
-
-let c = null;
-console.log(typeof c); //object 
-let val1 = Number(c);
-console.log(val1); //0
-console.log(typeof val1); //number
+// let score = 33;
+// console.log(typeof score)  //number
+// console.log(typeof(score))  //number
+// let valueInnumber  = Number(score) 
+// console.log(valueInnumber);  //33
+// console.log(typeof  valueInnumber); //number99
 
 
-let d = undefined;
-console.log(typeof d); // undefined
-let val2 = Number(d);
-console.log(val2); //NaN
-console.log(typeof val2); //number
+// let scor = "33abc";
+// console.log(typeof scor)  //string
+// console.log(typeof(scor))  //string
+// let valueInnumbe  = Number(scor)  
+// console.log(valueInnumbe);  //  output NaN --------> not a number 
+// console.log(typeof  valueInnumbe); //number
 
-let isloggedin = "gunjan"
-console.log(isloggedin); //gunjan
-console.log(typeof isloggedin); //string 
-let booleanisloggedin = Boolean(isloggedin);
-console.log(booleanisloggedin); // true
-console.log(typeof booleanisloggedin); //boolean
+// let a = true;
+// console.log(typeof a); //boolean
+// let val = Number(a);
+// console.log(val); // 1 
+// console.log(typeof val); //number
 
-let isloggedi = "";
-let z = Boolean(isloggedi);
-console.log( typeof isloggedi); //string 
-console.log()
+// let c = null;
+// console.log(typeof c); //object 
+// let val1 = Number(c);
+// console.log(val1); //0
+// console.log(typeof val1); //number
 
-//1 -> true   0 -> false
-// "" -> false
-// "gunjan"  -> true
 
-let some = 33
+// let d = undefined;
+// console.log(typeof d); // undefined
+// let val2 = Number(d);
+// console.log(val2); //NaN
+// console.log(typeof val2); //number
 
-let so = String(some)
-console.log(some) //33
-console.log(typeof some) //number
-console.log(typeof so) //string
+// let isloggedin = "gunjan"
+// console.log(isloggedin); //gunjan
+// console.log(typeof isloggedin); //string 
+// let booleanisloggedin = Boolean(isloggedin);
+// console.log(booleanisloggedin); // true
+// console.log(typeof booleanisloggedin); //boolean
+
+// let isloggedi = "";
+// let z = Boolean(isloggedi);
+// console.log( typeof isloggedi); //string 
+// console.log()
+
+// //1 -> true   0 -> false
+// // "" -> false
+// // "gunjan"  -> true
+
+// let some = 33
+
+// let so = String(some)
+// console.log(some) //33
+// console.log(typeof some) //number
+// console.log(typeof so) //string
 
 /*Number()  → converts to Number
 String()  → converts to String
@@ -85,3 +85,32 @@ String()
 33        → "33"
 true      → "true"
 */
+
+//********************opration**************************************** */
+// let value = 3;
+// let negvalue = - value;
+// console.log(negvalue) //-3
+
+// console.log(2+3); //5
+// console.log(2-2); //0
+// console.log(2*2); //4
+// console.log(2**2); //4
+
+// let str1 = "hello ";
+// let str2 = "gunjan";
+// let str3 = str1 + str2;
+// console.log(str3);  // hello gunjan
+
+// console.log("1" + 2); //12
+// console.log(1 + "2");  //12
+// console.log("1" +2+2); //122
+// console.log((3+4) * 5 %3 );  //2
+
+// console.log(+true); //1
+// console.log(+false); //0
+// console.log(+""); //0
+// console.log(+"gunjan"); //NaN
+
+// let game = 100;         // prefix increment and postfix increment js mdn ---check 
+// game++; 
+// console.log(game); //101 
